@@ -85,11 +85,17 @@ project = project.reset_index(name='Active Floats')
 # Plot Scenarios
 # -----------------------------------------------------------------------------
 
-fig, ax = plt.subplots()
-sns.histplot(df['Active Float Age (Years)'], bins=range(10), ax=ax)
-ax.set_title(f'{df.shape[0]} Active Floats', loc='left')
-ax.set_xticks(range(10))
-fig.set_size_inches(4, 4)
+fig, axes = plt.subplots(1, 2)
+sns.histplot(df['Active Float Age (Years)'], bins=range(10), ax=axes[0])
+axes[0].set_title(f'{df.shape[0]} Active Floats', loc='left')
+axes[0].set_xticks(range(10))
+deployment_years = [d.year + 0.5 for d in df['Deployment Date']]
+bins = np.arange(2017, 2028)
+sns.histplot(deployment_years, bins=bins, ax=axes[1])
+axes[1].set_xticks(bins[::2])
+axes[1].set_xticks(bins[1::2], minor=True)
+axes[1].set_xlabel('Deployment Date')
+fig.set_size_inches(8, 4)
 fig.savefig(f'../figures/existing_fleet_age_hist.png', dpi=300, bbox_inches='tight')
 
 scenarios = []
