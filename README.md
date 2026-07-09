@@ -21,13 +21,12 @@ Float estimates per year are based on funding scenarios and float cost. Float co
 
 | Scenario            | Description                                                                                                               |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------|
-| In Water            | Floats already deployed in the water. No additional deployments simply shows attrition of the existing fleet based on age |
 | Existing Resources  | Current actual funding                                                                                                    |
 | Scenario A          | Increased funding for Core floats, still no funding for BGC, Deep, or Polar floats                                        |
 | Scenario B          | Further increase in Core program funding, as well as funding for BGC, Deep, and Polar floats                              |
 | Scenario C          | Further increase in funding across all categories of floats                                                               |
 
-All scenarios except for "In Water" account for floats that are already procured but not yet in the water (28 Core floats, 4 Polar, 10 BGC, 1 Deep). These floats are all projected as deployed in 2027. For simplicity, any floats procured in a given year are also considered to be deployed in that year. 
+All scenarios account for floats that are already procured but not yet in the water (28 Core floats, 4 Polar, 10 BGC, 1 Deep). These floats are all projected as deployed in 2027. For simplicity, any floats procured in a given year are also considered to be deployed in that year. 
 
 ## Current Fleet Status
 
