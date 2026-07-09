@@ -122,6 +122,8 @@ for s in resources.index:
 g = sns.relplot(
     data=project, col='Float', x='Year', y='Active Floats', hue='Scenario', 
     hue_order=resources.index, col_order=resources.columns, col_wrap=2, 
+    size='Scenario', sizes={'Existing Resources':3, 'Scenario A':2, 'Scenario B':2, 'Scenario C':2},
+    style='Scenario', dashes={'Existing Resources':'', 'Scenario A':(2, 1), 'Scenario B':(2, 1), 'Scenario C':(2, 1)},
     marker='o', markersize=8, palette='colorblind',
     kind='line', estimator=None, height=3.5, facet_kws=dict(despine=False)
 )
