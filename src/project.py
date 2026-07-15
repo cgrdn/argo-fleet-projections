@@ -17,7 +17,7 @@ resources = pd.read_csv('../data/financial_scenarios.csv').set_index('Scenario')
 costs = pd.read_csv('../data/float_costs_2026.csv').set_index('Float')
 
 # cost increase per year
-inflation_rate = 5 # percent / year
+inflation_rate = 2.5 # percent / year
 
 # study time period
 now = pd.Timestamp('now')
